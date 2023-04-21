@@ -39,4 +39,9 @@ class CartModel extends ChangeNotifier {
     _itemIds.remove(item.id);
     notifyListeners();
   }
+
+  void removeAll() {
+    _itemIds.clear();
+    notifyListeners();
+  }
 }
